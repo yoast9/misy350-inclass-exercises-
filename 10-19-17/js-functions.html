@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <title>JS Function Exercises</title>
+  </head>
+  <body>
+    <h1>JS Functions - see console for outputs</h1>
+    <script>
+      //console.log(get_product(3,9));
+      /*console.log(get_product);
+      function get_product (a,b) {
+        return a * b;
+      }
+      */
+      //arrow function
+      /*const get_product = (a,b) => {
+        return a * b;
+      }*/
+
+      const get_square = a =>  a * a;
+
+      console.log(get_square(9));
+
+      let letter_grade;
+      const get_letter_grade = (grade) => {
+          let letter_grade;
+        if (grade >= 90) {
+          letter_grade = "A";
+        } else if (grade >= 80) {
+          letter_grade = "B";
+        }
+        else {
+          letter_grade = "C";
+        }
+        return letter_grade;
+      }
+      console.log(get_letter_grade(85));
+    </script>
+  </body>
+</html>
